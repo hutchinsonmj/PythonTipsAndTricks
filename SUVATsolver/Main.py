@@ -1,7 +1,7 @@
 __author__ = 'Mike'
 import SUVATsolver
 solver = SUVATsolver
-print("Welcome ot the SUVAT solver 9000")
+print("Welcome ot the SUVAT solver")
 while True:
     eq = input("Enter equation to solve:\n\t1. F=ma\n\t2. s=ut + 0.5at^2\n\t3. v^2 = u^2 + 2as\n")
     if eq == "1":
