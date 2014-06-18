@@ -17,6 +17,8 @@ def solvesutat(var, val1, val2, val3):
         return (val1 - ((val3 * math.pow(val2, 2))/2))/val2
     elif var == "a":
         return (val1 - (val2 * val3))/(math.pow(val3, 2)/2)
+    elif var == "t":
+        return {(-val2 + math.sqrt(math.pow(val2, 2) + 4 * val3 * -val1))/2 * val3, (-val2 - math.sqrt(math.pow(val2, 2) + 4 * val3 * -val1))/2 * val3}
 
 print("Hello")
 invar = input()
