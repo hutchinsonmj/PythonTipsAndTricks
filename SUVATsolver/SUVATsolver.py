@@ -6,7 +6,7 @@ import math
 def solve_fma(var, val1, val2):
     if var == "F":
         return val1 * val2
-    elif var == "m" | var == "a":
+    elif (var == "m") | (var == "a"):
         return val1 / val2
 
 
@@ -26,7 +26,7 @@ def solve_vu2as(var, val1, val2, val3):
         return math.sqrt(math.pow(val1, 2) + (2 * val2 * val3))
     elif var == "u":
         return math.sqrt(math.pow(val1, 2) - (2 * val2 * val3))
-    elif var == "a" | var == "s":
+    elif (var == "a") | (var == "s"):
         return (math.pow(val1, 2) - math.pow(val2, 2))/(2 * val3)
 
 
@@ -36,4 +36,4 @@ while True:
     in1 = float(input())
     in2 = float(input())
     in3 = float(input())
-    print(solve_sutat(invar, in1, in2, in3))
+    print(solve_vu2as(invar, in1, in2, in3))
